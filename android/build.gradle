@@ -1,0 +1,56 @@
+group 'com.fenger.ad.flutter_ad'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+// 定义一个方法, 用于获取当前moudle的dir
+def getCurrentProjectDir() {
+    String result = ""
+    rootProject.allprojects { project ->
+        if (project.properties.get("identityPath").toString() == ":flutter_ad") { // 这里是flutter的约定, 插件的module名是插件名, :是gradle的约定. project前加:
+            result = project.properties.get("projectDir").toString()
+        }
+    }
+    return result
+}
+
+rootProject.allprojects {
+    def dir = getCurrentProjectDir() // 获取当前Moudle目录
+
+    repositories {
+        google()
+        jcenter()
+
+        maven { // 添加这个指向本地的仓库目录
+            url "$dir/aar"
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+
+dependencies {
+    // 穿山甲SDK（本地maven）
+    implementation "com.fenger.flutter_ad:com.bytedance.sdk.openadsdk:3.5.0.3"
+
+    // 广点通SDK
+    implementation 'com.qq.e.union:union:4.333.1203'
+}

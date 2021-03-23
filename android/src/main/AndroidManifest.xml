@@ -1,0 +1,76 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.fenger.ad.flutter_ad">
+
+    <!-- ======================= 穿山甲权限配置开始 =================== -->
+    <!--必要权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--可选权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- ======================= 穿山甲权限配置结束 =================== -->
+
+
+    <!-- ======================= 广点通权限配置开始 =================== -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 可选，如果需要精确定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- ======================= 广点通权限配置结束 =================== -->
+
+
+    <application>
+
+        <!-- ======================= 穿山甲组件配置开始 =================== -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+
+        <!--开屏Activity-->
+        <activity
+            android:name="com.fenger.ad.flutter_ad.csj.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <!-- ======================= 穿山甲组件配置结束 =================== -->
+
+
+
+        <!-- ======================= 广点通组件配置开始 =================== -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.qq.e.comm.GDTFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gdt_file_path" />
+        </provider>
+        <!--开屏Activity-->
+        <activity
+            android:name="com.fenger.ad.flutter_ad.gdt.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <!-- ======================= 广点通组件配置结束 =================== -->
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9eea50f9-3f3d-407a-90e2-86be17860250" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[9a458259]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1q7745Nsp3mnCVa7ed7AYytB7yg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="Flutter.example/lib/main.dart">
+    <configuration name="tests in flutter_ad_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_ad_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in flutter_ad_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eea50f9-3f3d-407a-90e2-86be17860250" name="Default Changelist" comment="" />
+      <created>1616418580697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616418580697</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="658" y="531" key="AndroidProcessChooserDialog" timestamp="1616487542473">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state x="658" y="531" key="AndroidProcessChooserDialog/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616487542473" />
+    <state width="606" height="466" key="DebuggerActiveHint" timestamp="1616485133018">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state width="606" height="466" key="DebuggerActiveHint/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616485133018" />
+    <state width="1513" height="373" key="GridCell.Tab.0.bottom" timestamp="1616504124053">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state width="1513" height="373" key="GridCell.Tab.0.bottom/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616504124053" />
+    <state width="1513" height="373" key="GridCell.Tab.0.center" timestamp="1616504124052">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state width="1513" height="373" key="GridCell.Tab.0.center/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616504124052" />
+    <state width="1513" height="373" key="GridCell.Tab.0.left" timestamp="1616504124052">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state width="1513" height="373" key="GridCell.Tab.0.left/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616504124052" />
+    <state width="1513" height="373" key="GridCell.Tab.0.right" timestamp="1616504124052">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state width="1513" height="373" key="GridCell.Tab.0.right/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616504124052" />
+    <state x="653" y="393" key="SettingsEditor" timestamp="1616418633655">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state x="653" y="393" key="SettingsEditor/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616418633655" />
+    <state x="749" y="363" width="670" height="676" key="search.everywhere.popup" timestamp="1616504451952">
+      <screen x="44" y="23" width="2516" height="1417" />
+    </state>
+    <state x="749" y="363" width="670" height="676" key="search.everywhere.popup/2560.700.1440.877/44.23.2516.1417@44.23.2516.1417" timestamp="1616504451952" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/test/flutter_ad_test.dart</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
