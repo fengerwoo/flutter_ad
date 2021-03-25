@@ -71,7 +71,7 @@ class UnionGDT {
   /// @Desc  : 播放激励视频
   /// @author: 枫儿
   Future<bool> showRewardVideo(String vid) async {
-    bool ret = (await _channel.invokeMapMethod("showRewardVideo", {"vid": vid}))
+    bool ret = (await _channel.invokeMethod("showRewardVideo", {"vid": vid}))
         as bool;
     return ret;
   }
