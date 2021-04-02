@@ -45,6 +45,7 @@
         <!--开屏Activity-->
         <activity
             android:name="com.fenger.ad.flutter_ad.csj.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"/>
         <!-- ======================= 穿山甲组件配置结束 =================== -->
 
@@ -67,6 +68,7 @@
         <!--开屏Activity-->
         <activity
             android:name="com.fenger.ad.flutter_ad.gdt.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"/>
         <!-- ======================= 广点通组件配置结束 =================== -->
 
