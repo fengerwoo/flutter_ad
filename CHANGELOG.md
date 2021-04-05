@@ -1,3 +1,6 @@
+## 1.3.2
+* Added Pangle Bannner ads
+
 ## 1.3.1
 * Forced vertical screen for open screen ads
 

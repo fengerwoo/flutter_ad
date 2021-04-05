@@ -16,6 +16,7 @@ import com.bytedance.sdk.openadsdk.TTAdSdk;
 import com.fenger.ad.flutter_ad.CallBack;
 import com.fenger.ad.flutter_ad.LifeAware;
 import com.fenger.ad.flutter_ad.Utils;
+import com.fenger.ad.flutter_ad.csj.banner.BannerViewFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,10 +37,12 @@ public class MethodCallHandlerCSJ implements MethodCallHandler, LifeAware {
     }
 
     private Activity activity;
+    // 为了在 onAttachedToActivity() 中得到 PlatformViewRegistry
+    private FlutterPlugin.FlutterPluginBinding pluginBinding;
     
     @Override
     public void onAttachedToEngine(@NonNull FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
-
+        pluginBinding = flutterPluginBinding;
     }
 
     @Override
@@ -50,6 +53,9 @@ public class MethodCallHandlerCSJ implements MethodCallHandler, LifeAware {
     @Override
     public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
         activity = binding.getActivity();
+        
+        pluginBinding.getPlatformViewRegistry().registerViewFactory(
+                "flutter_ad/csj/banner", new BannerViewFactory(activity, pluginBinding.getBinaryMessenger()));
     }
 
     @Override
